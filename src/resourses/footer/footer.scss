@@ -5,6 +5,8 @@
     user-select: none;
     letter-spacing: 1px;
     overflow: hidden;
+    flex-wrap: wrap;
+    min-width: 320px;
     p::after {
         content: '';
         display: block;
@@ -45,6 +47,11 @@
         &:hover {
             box-shadow: 0px 0px 15px 0px rgb(1, 171, 249);
             filter: brightness(120%);
+        }
+    }
+    @media (max-width: 400px) {
+        .social{
+            margin-right: -14px;
         }
     }
 }

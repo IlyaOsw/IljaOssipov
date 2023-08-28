@@ -42,20 +42,20 @@ function Particle() {
                             quantity: 4,
                         },
                         repulse: {
-                            distance: 200,
+                            distance: 175,
                             duration: 0.4,
                         },
                     },
                 },
                 particles: {
                     color: {
-                        value: "#ffffff",
+                        value: "#808080",
                     },
                     links: {
-                        color: "#ffffff",
-                        distance: 150,
+                        color: "#808080",
+                        distance: 200,
                         enable: true,
-                        opacity: 0.2,
+                        opacity: 0.5,
                         width: 1,
                     },
                     move: {
@@ -71,12 +71,12 @@ function Particle() {
                     number: {
                         density: {
                             enable: true,
-                            area: 800,
+                            area: 1000,
                         },
                         value: 80,
                     },
                     opacity: {
-                        value: 0.5,
+                        value: 0.6,
                     },
                     shape: {
                         type: "circle",

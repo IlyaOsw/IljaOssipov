@@ -18,7 +18,7 @@ function Header() {
         <div className="container-fluid fixed-top header_color">
           <nav className="navbar navbar-expand-lg container">
             <a className="navbar-brand fs-2 nav-link" href="#">{t("resume")}</a>
-            <button className="navbar-toggler bg-secondary-subtle" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <button id='menu' className="navbar-toggler bg-secondary-subtle" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span className="navbar-toggler-icon"></span>
             </button>
           <div className="collapse navbar-collapse me-4" id="navbarSupportedContent">
@@ -47,12 +47,12 @@ function Header() {
                 <li><a className="dropdown-item" href="#" onClick={() => changeLanguage("ru")}><img src={ru} alt='RU'></img>{t("Russian")}</a></li>
               </ul>
             </div>
-            <div className='theme ms-5'> 
+            <div className='theme ms-4 d-flex'> 
               <div className="btn btn-light light_theme fw-semibold">
                 <img src={light} alt='Light theme'></img>
                 <span>{t("light")}</span>
               </div>
-              <div className="btn btn-secondary dark_theme fw-semibold">
+              <div className="btn btn-secondary dark_theme fw-semibold ms-2">
                 <img src={dark} alt='Dark theme'></img>
                 <span>{t("dark")}</span>
               </div>

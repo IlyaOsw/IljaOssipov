@@ -24,7 +24,20 @@ function App() {
     }
   });
   useEffect(() => {
+      // Hide Burger-menu
+      const body = document.body
+      const burgerBtn = document.getElementById('menu')
+      const burgerMenu = document.getElementById('navbarSupportedContent');
 
+      body.addEventListener('click', (event) => {
+        if(!burgerMenu.contains(event.target) && event.target !== burgerBtn) {
+          if(burgerMenu.classList.contains('show')) {
+            burgerBtn.click()
+          }
+        }
+      })
+
+      // Dark/Light Theme
       const bodyColor = document.querySelector('body')
       const headerColor = document.querySelector('.header_color')
       const darkTheme = document.querySelector('.dark_theme')
@@ -78,8 +91,7 @@ function App() {
         });
       })
 
-
-
+      // Scroll To Blocks
       const aboutBlock = document.querySelector('.block-about')
       const skilssBlock = document.querySelector('.block-skills')
       const experienceBlock = document.querySelector('.block-experience')
@@ -113,7 +125,7 @@ function App() {
             scrollToBlock(contactBlock)
         })
 
-
+      // Animations
       const animationItems = document.querySelectorAll('.animation_item');
       if (animationItems.length > 0) {
         window.addEventListener('scroll', animationOnScroll);
@@ -145,7 +157,7 @@ function App() {
         }
         }
 
-
+      // Back To Top Button
       const scrollButton = document.querySelector('.scroll-btn');
       scrollButton.addEventListener('click', () => {
       window.scroll(0, 0);
@@ -157,7 +169,6 @@ function App() {
         scrollButton.classList.add('hidden');
       }
       });
-      
       }, []);
 
     return (

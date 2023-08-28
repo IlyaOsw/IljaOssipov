@@ -6,6 +6,7 @@
     cursor: default;
     text-align: center;
     overflow: hidden;
+    min-width: 320px;
     ::placeholder {
         color: rgb(88, 88, 88);
     }
@@ -90,6 +91,7 @@
         background-color: #aaaaaa;
     }
     button {
+        color: black;
         opacity: 0;
         transform: scale(0);
         transition: all 0.8s ease 0s;

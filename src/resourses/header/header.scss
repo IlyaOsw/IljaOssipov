@@ -3,6 +3,7 @@ $nav-text: uppercase;
 $l-space: 1px;
 body {
     background-image: linear-gradient(to right, #141414, #494949);
+    overflow-x: hidden;
 }
 .header_color {
     background-image: linear-gradient(to right, #141414, #494949);
@@ -20,6 +21,7 @@ body {
     font-family: 'Jura', sans-serif;
     letter-spacing: $l-space;
     user-select: none;
+    min-width: 320px;
     .nav-link {
         color: #f8f9fa !important;
     }
@@ -46,13 +48,18 @@ body {
             transform: scale(1);
       }
     }
-    .navbar-toggler:focus {
-        outline: none;
-        box-shadow: none;
+    .navbar-toggler {
+        border: 1px solid black;
+        &:focus {
+            box-shadow: none;
+        }
     }
-    .dropdown-toggle:hover {
-        transition: all 0.3s;
-        filter: brightness(90%);
+    .dropdown-toggle {
+        border: 1px solid black;
+        :hover {
+            transition: all 0.3s;
+            filter: brightness(90%);
+        }
     }
     .btn,
     .btn-group {
@@ -65,12 +72,16 @@ body {
             height: 25px;
             margin-right: 5px;
             margin-bottom: 3px;
+            margin-left: -5px;
         }
     }
-    @media (max-width: 767px) {
+    .theme {
+        
+    }
+    @media (max-width: 1199px) {
         .theme {
             span {
-            display: none;
+                display: none;
             }
             img {
                 margin-left: 5px;

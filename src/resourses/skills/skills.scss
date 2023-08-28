@@ -5,6 +5,7 @@ $skills-text: center;
     font-family: 'Jura', sans-serif;
     user-select: none;
     letter-spacing: 1px;
+    min-width: 320px;
     .skills-tittle {
         font-size: 3rem;
         text-align: $skills-text;
@@ -51,7 +52,7 @@ $skills-text: center;
     }
     @media (max-width: 479px) {
         .skills-icons img{
-            margin: 10px;
+            margin: 17px;
         }
     }
 }
