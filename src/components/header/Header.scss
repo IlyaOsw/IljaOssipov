@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Jura:wght@300;500;700&display=swap');
+$nav-text: uppercase;
+$l-space: 1px;
+body {
+    background-image: linear-gradient(to right, #141414, #494949);
+    overflow-x: hidden;
+}
+.header_color {
+    background-image: linear-gradient(to right, #141414, #494949);
+}
+#tsparticles {
+    position: fixed;
+    z-index: -1;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
+.container-fluid {
+    font-weight: 800;
+    font-family: 'Jura', sans-serif;
+    letter-spacing: $l-space;
+    user-select: none;
+    min-width: 320px;
+    .title {
+        cursor: default;
+    }
+    .nav-link {
+        color: #f8f9fa !important;
+    }
+    .navbar-brand,
+    .nav-item {
+      text-transform: $nav-text;
+      color: #f8f9fa;
+      a {
+        transition: all .3s;
+      }
+      a:hover {
+        filter: brightness(70%);
+      }
+        a::after {
+            content: '';
+            display: block;
+            width: 100%;
+            background-color: #919191;
+            height: 1px;
+            transition: all .3s;
+            transform: scale(0);
+      }
+        a:hover::after {
+            transform: scale(1);
+      }
+    }
+    .navbar-toggler {
+        border: 1px solid black;
+        &:focus {
+            box-shadow: none;
+        }
+    }
+    .dropdown-toggle {
+        border: 1px solid black;
+        :hover {
+            transition: all 0.3s;
+            filter: brightness(90%);
+        }
+    }
+    .btn,
+    .btn-group {
+        letter-spacing: $l-space;
+    }
+    .border:hover {
+        filter: brightness(90%);
+    }
+    .languageBtn {
+        color: black;
+        text-decoration: none;
+    }
+    .btn-group,
+    .theme {
+        img {
+            width: 25px;
+            height: 25px;
+            margin-right: 5px;
+            margin-bottom: 3px;
+            margin-left: -5px;
+        }
+    }
+    @media (max-width: 1199px) {
+        .theme {
+            span {
+                display: none;
+            }
+            img {
+                margin-left: 5px;
+            }
+        }
+    }
+    @media (max-width: 992px) {
+        .btn-group {
+            border: 1px solid black;
+        }
+    }
+    @media (max-width: 902px) {
+        .nav-item {
+            a::after {
+                content: '';
+                display: block;
+                width: 0%;
+          }
+        }
+    }
+    @media (max-width: 767px) {
+        .btn {
+            a {
+                display: none;
+            }
+        }
+    }
+    @media (max-width: 479px) {
+        .navbar-brand {
+            display: none;
+        }
+    }
+}
