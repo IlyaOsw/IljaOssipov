@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/IljaOssipov/static/css/main.06d82290.css",
-    "main.js": "/IljaOssipov/static/js/main.9738ff66.js",
+    "main.css": "/IljaOssipov/static/css/main.ca756946.css",
+    "main.js": "/IljaOssipov/static/js/main.251682b6.js",
     "static/media/mainPhoto2.jpg": "/IljaOssipov/static/media/mainPhoto2.017f93a15d23a53bf0c8.jpg",
     "static/media/exp.jpg": "/IljaOssipov/static/media/exp.5e89351734797b5f0a95.jpg",
     "static/media/mainPhoto1.jpg": "/IljaOssipov/static/media/mainPhoto1.056262d28d7514ba0070.jpg",
@@ -22,11 +22,11 @@
     "static/media/dark.svg": "/IljaOssipov/static/media/dark.ee503ee8a37b00ed18108764cfabf163.svg",
     "index.html": "/IljaOssipov/index.html",
     "static/media/getFetch.cjs": "/IljaOssipov/static/media/getFetch.40f37ddea2378391108f.cjs",
-    "main.06d82290.css.map": "/IljaOssipov/static/css/main.06d82290.css.map",
-    "main.9738ff66.js.map": "/IljaOssipov/static/js/main.9738ff66.js.map"
+    "main.ca756946.css.map": "/IljaOssipov/static/css/main.ca756946.css.map",
+    "main.251682b6.js.map": "/IljaOssipov/static/js/main.251682b6.js.map"
   },
   "entrypoints": [
-    "static/css/main.06d82290.css",
-    "static/js/main.9738ff66.js"
+    "static/css/main.ca756946.css",
+    "static/js/main.251682b6.js"
   ]
 }
