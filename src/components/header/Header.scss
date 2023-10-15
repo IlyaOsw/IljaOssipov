@@ -33,6 +33,7 @@ body {
     text-transform: $nav-text;
     color: #f8f9fa;
     a {
+      cursor: pointer;
       transition: all 0.3s;
     }
     a:hover {
@@ -49,8 +50,7 @@ body {
       right: 0;
       left: initial;
     }
-    a:hover:after,
-    a:focus:after {
+    a:hover:after {
       width: 100%;
       right: initial;
       left: 0;

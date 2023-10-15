@@ -50,7 +50,7 @@ function Particle() {
             color: "#808080",
             distance: 200,
             enable: true,
-            opacity: 0.5,
+            opacity: 0.6,
             width: 1,
           },
           move: {

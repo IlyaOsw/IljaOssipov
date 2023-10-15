@@ -15,7 +15,10 @@ const Header = () => {
   return (
     <div className="container-fluid fixed-top header_color">
       <nav className="navbar navbar-expand-lg container">
-        <a className="navbar-brand fs-2 nav-link title" href="/">
+        <a
+          className="navbar-brand fs-2 nav-link title"
+          rel="noopener noreferrer"
+        >
           {t("resume")}
         </a>
         <button
@@ -40,7 +43,7 @@ const Header = () => {
                 id="aboutBtn"
                 className="nav-link active me-1"
                 aria-current="page"
-                href="/"
+                rel="noopener noreferrer"
               >
                 {t("about")}
               </a>
@@ -50,7 +53,7 @@ const Header = () => {
                 id="skilssBtn"
                 className="nav-link active me-1"
                 aria-current="page"
-                href="/"
+                rel="noopener noreferrer"
               >
                 {t("skills")}
               </a>
@@ -60,7 +63,7 @@ const Header = () => {
                 id="experienceBtn"
                 className="nav-link active me-1"
                 aria-current="page"
-                href="/"
+                rel="noopener noreferrer"
               >
                 {t("experience")}
               </a>
@@ -70,7 +73,7 @@ const Header = () => {
                 id="contactBtn"
                 className="nav-link active me-1"
                 aria-current="page"
-                href="/"
+                rel="noopener noreferrer"
               >
                 {t("contact")}
               </a>

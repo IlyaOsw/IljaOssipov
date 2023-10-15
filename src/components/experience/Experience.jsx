@@ -1,6 +1,6 @@
 import { useTranslation } from "react-i18next";
 import "./Experience.scss";
-import expImg from "./image/exp.jpg";
+import expImg from "./images/exp.jpg";
 
 const Experience = () => {
   const { t } = useTranslation();

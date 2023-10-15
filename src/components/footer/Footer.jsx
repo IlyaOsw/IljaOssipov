@@ -11,7 +11,7 @@ const Footer = () => {
     <div className="container-fluid">
       <div className="d-sm-flex justify-content-around fs-4 block-footer">
         <div className="footer-left">
-          <p className="item-left animation_item">© 2023 By Ilja Ossipov</p>
+          <p className="item-left animation_item">2023 By Ilja Ossipov. ©</p>
         </div>
         <div className="footer-right item-right animation_item">
           <span className="me-3 ln">{t("follow")}</span>
