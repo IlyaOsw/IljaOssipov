@@ -1,6 +1,5 @@
 import { useTranslation } from "react-i18next";
 import "./About.scss";
-import React from "react";
 import myPhoto from "./images/me.jpg";
 import name from "./images/name.png";
 import age from "./images/age.png";
@@ -14,7 +13,7 @@ import fb from "./images/fb.svg";
 import ig from "./images/ig.svg";
 import git from "./images/git.png";
 
-function About() {
+const About = () => {
   const { t } = useTranslation();
   return (
     <>
@@ -124,5 +123,5 @@ function About() {
       </div>
     </>
   );
-}
+};
 export default About;

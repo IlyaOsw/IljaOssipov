@@ -1,12 +1,11 @@
 import { useTranslation } from "react-i18next";
 import "./Footer.scss";
-import React from "react";
 import linkedin from "./icons/linkedin.svg";
 import fb from "./icons/fb.svg";
 import ig from "./icons/ig.svg";
 import git from "./icons/git.png";
 
-function Footer() {
+const Footer = () => {
   const { t } = useTranslation();
   return (
     <div className="container-fluid">
@@ -52,5 +51,5 @@ function Footer() {
       </div>
     </div>
   );
-}
+};
 export default Footer;

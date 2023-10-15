@@ -1,12 +1,11 @@
 import { useTranslation } from "react-i18next";
-import React from "react";
 import "./Main.scss";
 import firstPhoto from "./photos/mainPhoto1.jpg";
 import secondPhoto from "./photos/mainPhoto2.jpg";
 import thirdPhoto from "./photos/mainPhoto3.jpg";
-import arrowUp from "./photos/arrowUp.png";
+import ScrollButton from "./scrollButton/ScrollButton";
 
-function Main() {
+const Main = () => {
   const { t } = useTranslation();
   return (
     <>
@@ -84,10 +83,8 @@ function Main() {
           ></span>
         </button>
       </div>
-      <div>
-        <img src={arrowUp} alt="Arrow up" className="scroll-btn hidden"></img>
-      </div>
+      <ScrollButton />
     </>
   );
-}
+};
 export default Main;

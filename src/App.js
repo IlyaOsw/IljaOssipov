@@ -1,11 +1,11 @@
-import Header from "./components/header/Header";
-import Main from "./components/main/Main";
-import About from "./components/about/About";
-import Skills from "./components/skills/Skills";
-import Experience from "./components/experience/Experience";
-import Contact from "./components/contact/Contact";
-import Footer from "./components/footer/Footer";
-import React, { useEffect } from "react";
+import Header from "./components/Header/Header";
+import Main from "./components/Main/Main";
+import About from "./components/About/About";
+import Skills from "./components/Skills/Skills";
+import Experience from "./components/Experience/Experience";
+import Contact from "./components/Contact/Contact";
+import Footer from "./components/Footer/Footer";
+import { useEffect } from "react";
 import Particle from "./components/Particle";
 import i18n from "./i18n";
 
@@ -125,9 +125,8 @@ function App() {
     function scrollToBlock(element) {
       const windowHeight = window.innerHeight;
       const elementHeight = element.clientHeight;
-      const scrollTopOffset =
-        element.offsetTop - (windowHeight - elementHeight) / 56;
 
+      const scrollTopOffset = element.offsetTop;
       window.scroll({
         left: 0,
         top: scrollTopOffset,
@@ -193,20 +192,6 @@ function App() {
         animationOnScroll();
       });
     }
-
-    // Back To Top Button
-    const scrollButton = document.querySelector(".scroll-btn");
-    scrollButton.addEventListener("click", () => {
-      window.scroll(0, 0);
-    });
-
-    window.addEventListener("scroll", () => {
-      if (window.scrollY > 100) {
-        scrollButton.classList.remove("hidden");
-      } else {
-        scrollButton.classList.add("hidden");
-      }
-    });
   }, []);
 
   return (

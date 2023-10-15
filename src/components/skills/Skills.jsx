@@ -1,6 +1,5 @@
 import { useTranslation } from "react-i18next";
 import "./Skills.scss";
-import React from "react";
 import htmlIcon from "./icons/html.svg";
 import cssIcon from "./icons/css.svg";
 import sassIcon from "./icons/sass.svg";
@@ -10,7 +9,7 @@ import reactIcon from "./icons/react.svg";
 import gitIcon from "./icons/git.svg";
 import bootstrapIcon from "./icons/bootstrap.svg";
 
-function Skills() {
+const Skills = () => {
   const { t } = useTranslation();
   return (
     <>
@@ -50,5 +49,5 @@ function Skills() {
       </div>
     </>
   );
-}
+};
 export default Skills;

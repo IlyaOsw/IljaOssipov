@@ -1,9 +1,8 @@
 import { useTranslation } from "react-i18next";
 import "./Experience.scss";
-import React from "react";
 import expImg from "./image/exp.jpg";
 
-function Experience() {
+const Experience = () => {
   const { t } = useTranslation();
   return (
     <>
@@ -47,5 +46,5 @@ function Experience() {
       </div>
     </>
   );
-}
+};
 export default Experience;

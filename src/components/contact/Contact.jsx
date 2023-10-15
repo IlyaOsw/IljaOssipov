@@ -1,16 +1,13 @@
 import { useTranslation } from "react-i18next";
 import "./Contact.scss";
-import React from "react";
 import { useForm, ValidationError } from "@formspree/react";
 
-function Contact() {
+const Contact = () => {
   const { t } = useTranslation();
-
   const [state] = useForm("xrgwkbqk");
   if (state.succeeded) {
     return <p>Thanks for joining!</p>;
   }
-
   return (
     <>
       <div className="block-contact">
@@ -84,5 +81,5 @@ function Contact() {
       </div>
     </>
   );
-}
+};
 export default Contact;

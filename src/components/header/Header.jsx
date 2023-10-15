@@ -6,9 +6,8 @@ import ru from "./icons/ru.png";
 import language from "./icons/language.png";
 import light from "./icons/light.svg";
 import dark from "./icons/dark.svg";
-import React from "react";
 
-function Header() {
+const Header = () => {
   const { t, i18n } = useTranslation();
   const changeLanguage = (language) => {
     i18n.changeLanguage(language);
@@ -133,5 +132,5 @@ function Header() {
       </nav>
     </div>
   );
-}
+};
 export default Header;
