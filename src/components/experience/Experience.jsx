@@ -1,6 +1,7 @@
 import { useTranslation } from "react-i18next";
 import "./Experience.scss";
-import expImg from "./images/exp.jpg";
+import expImg from "./Images/exp.jpg";
+import Description from "./Description/Description";
 
 const Experience = () => {
   const { t } = useTranslation();
@@ -12,32 +13,7 @@ const Experience = () => {
         </div>
         <div className="experience-body">
           <div className="experience-information fs-5">
-            <ul>
-              <li className="animation_item">
-                <p>{t("html")}</p>
-              </li>
-              <li className="animation_item">
-                <p>{t("css")}</p>
-              </li>
-              <li className="animation_item">
-                <p>{t("sass")}</p>
-              </li>
-              <li className="animation_item">
-                <p>{t("bootstrap")}</p>
-              </li>
-              <li className="animation_item">
-                <p>{t("js")}</p>
-              </li>
-              <li className="animation_item">
-                <p>{t("ts")}</p>
-              </li>
-              <li className="animation_item">
-                <p>{t("git")}</p>
-              </li>
-              <li className="animation_item">
-                <p>{t("react")}</p>
-              </li>
-            </ul>
+            <Description />
           </div>
           <div className="exp-image mb-5 mt-5">
             <img src={expImg} alt="" className="img-fluid animation_item"></img>

@@ -137,7 +137,7 @@ function App() {
       event.preventDefault();
       scrollToBlock(aboutBlock);
     });
-    document.getElementById("skilssBtn").addEventListener("click", (event) => {
+    document.getElementById("skillsBtn").addEventListener("click", (event) => {
       event.preventDefault();
       scrollToBlock(skilssBlock);
     });

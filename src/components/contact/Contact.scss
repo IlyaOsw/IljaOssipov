@@ -7,6 +7,7 @@
   text-align: center;
   overflow: hidden;
   min-width: 320px;
+  letter-spacing: 1px;
   ::placeholder {
     color: rgb(88, 88, 88);
   }
@@ -80,7 +81,6 @@
     outline: none;
   }
   .contact-send button {
-    font-weight: 800;
     height: 45px;
     min-width: 15%;
     text-transform: uppercase;
@@ -88,24 +88,21 @@
     cursor: pointer;
     border: none;
     border-radius: 25px;
-    background-color: #aaaaaa;
-  }
-  button {
-    color: black;
+    background-color: #6c6c6c;
+    margin-bottom: 5px;
+    color: white;
     opacity: 0;
     transform: scale(0);
-    transition: all 0.8s ease 0s;
+    transition: 0.5s all;
     &.active {
       opacity: 1;
       transform: scale(1);
     }
-    &:active {
-      padding-bottom: 5px;
+    &:hover {
+      background-color: rgb(201, 201, 201);
+      color: black;
+      box-shadow: 0px 0px 3px 0px rgb(146, 146, 146);
     }
-  }
-  .contact-send button:hover {
-    filter: brightness(80%);
-    box-shadow: 0px 0px 3px 0px rgb(146, 146, 146);
   }
   @media (max-width: 524px) {
     .item {

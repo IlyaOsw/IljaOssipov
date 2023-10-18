@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import arrowUp from "./../photos/arrowUp.png";
+import arrowUp from "../Images/arrowUp.png";
 import "./ScrollButton.scss";
 
 const ScrollButton = () => {

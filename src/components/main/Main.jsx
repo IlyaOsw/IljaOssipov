@@ -1,9 +1,9 @@
 import { useTranslation } from "react-i18next";
 import "./Main.scss";
-import firstPhoto from "./images/mainPhoto1.jpg";
-import secondPhoto from "./images/mainPhoto2.jpg";
-import thirdPhoto from "./images/mainPhoto3.jpg";
-import ScrollButton from "./scrollButton/ScrollButton";
+import firstPhoto from "./Images/mainPhoto1.jpg";
+import secondPhoto from "./Images/mainPhoto2.jpg";
+import thirdPhoto from "./Images/mainPhoto3.jpg";
+import ScrollButton from "./ScrollButton/ScrollButton";
 
 const Main = () => {
   const { t } = useTranslation();
