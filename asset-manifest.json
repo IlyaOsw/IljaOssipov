@@ -1,11 +1,12 @@
 {
   "files": {
-    "main.css": "/IljaOssipov/static/css/main.ca756946.css",
-    "main.js": "/IljaOssipov/static/js/main.251682b6.js",
+    "main.css": "/IljaOssipov/static/css/main.3376de4d.css",
+    "main.js": "/IljaOssipov/static/js/main.7990c068.js",
     "static/media/mainPhoto2.jpg": "/IljaOssipov/static/media/mainPhoto2.017f93a15d23a53bf0c8.jpg",
     "static/media/exp.jpg": "/IljaOssipov/static/media/exp.5e89351734797b5f0a95.jpg",
     "static/media/mainPhoto1.jpg": "/IljaOssipov/static/media/mainPhoto1.056262d28d7514ba0070.jpg",
     "static/media/mainPhoto3.jpg": "/IljaOssipov/static/media/mainPhoto3.5a706db7525198fb9705.jpg",
+    "static/media/Front-End Ilja Ossipov CV.pdf": "/IljaOssipov/static/media/Front-End Ilja Ossipov CV.6a62b12a09198cd27546.pdf",
     "static/media/me.jpg": "/IljaOssipov/static/media/me.8b1b740dbc959c820440.jpg",
     "static/media/ig.svg": "/IljaOssipov/static/media/ig.c83e628eea4e83e0d2b6c8e54910510c.svg",
     "static/media/sass.svg": "/IljaOssipov/static/media/sass.fb123914eb0e5cc6e0a65e2928d89e2a.svg",
@@ -14,6 +15,7 @@
     "static/media/git.svg": "/IljaOssipov/static/media/git.ef390047cccb792babdac3f1efc83340.svg",
     "static/media/light.svg": "/IljaOssipov/static/media/light.5420fa077a2a50aeef0a6450a2526394.svg",
     "static/media/linkedin.svg": "/IljaOssipov/static/media/linkedin.c304a4148cde039a54532585f4d47b48.svg",
+    "static/media/redux.svg": "/IljaOssipov/static/media/redux.7fe607aacc31f6e6199e70f16aae407e.svg",
     "static/media/js.svg": "/IljaOssipov/static/media/js.4c1b5332c1b1057928f6f06cf972c91c.svg",
     "static/media/fb.svg": "/IljaOssipov/static/media/fb.ef824524d63a006c5931918fd6a1cd47.svg",
     "static/media/ts.svg": "/IljaOssipov/static/media/ts.8d9549db1a0f5d73a35aa5dab48a09f9.svg",
@@ -22,11 +24,11 @@
     "static/media/dark.svg": "/IljaOssipov/static/media/dark.ee503ee8a37b00ed18108764cfabf163.svg",
     "index.html": "/IljaOssipov/index.html",
     "static/media/getFetch.cjs": "/IljaOssipov/static/media/getFetch.40f37ddea2378391108f.cjs",
-    "main.ca756946.css.map": "/IljaOssipov/static/css/main.ca756946.css.map",
-    "main.251682b6.js.map": "/IljaOssipov/static/js/main.251682b6.js.map"
+    "main.3376de4d.css.map": "/IljaOssipov/static/css/main.3376de4d.css.map",
+    "main.7990c068.js.map": "/IljaOssipov/static/js/main.7990c068.js.map"
   },
   "entrypoints": [
-    "static/css/main.ca756946.css",
-    "static/js/main.251682b6.js"
+    "static/css/main.3376de4d.css",
+    "static/js/main.7990c068.js"
   ]
 }
