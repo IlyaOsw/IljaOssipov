@@ -1,5 +1,4 @@
 import { useTranslation } from "react-i18next";
-import ".././Footer.scss";
 import linkedin from "./Icons/linkedin.svg";
 import fb from "./Icons/fb.svg";
 import ig from "./Icons/ig.svg";

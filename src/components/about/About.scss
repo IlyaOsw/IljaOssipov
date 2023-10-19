@@ -90,8 +90,9 @@
       background-color: #6c6c6c;
       color: white;
       transition: 0.5s all;
-      padding: 8px;
+      padding: 10px;
       text-decoration: none;
+      z-index: 99;
       &:hover {
         background-color: rgb(201, 201, 201);
         color: black;
