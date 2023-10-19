@@ -1,37 +1,37 @@
+import React from "react";
 import { useTranslation } from "react-i18next";
-import linkedin from "./Icons/linkedin.svg";
-import fb from "./Icons/fb.svg";
-import ig from "./Icons/ig.svg";
-import git from "./Icons/git.png";
 
-const Follow = () => {
+const Follow: React.FC = () => {
   const { t } = useTranslation();
+  enum SocialLinks {
+    LINKEDIN = "Linkedin",
+    FACEBOOK = "Facebook",
+    INSTAGRAM = "Instagram",
+    GITHUB = "Github",
+  }
   const links = [
     {
       id: 1,
       url: "https://www.linkedin.com/in/ilyaosw/",
-      img: linkedin,
-      label: "Linkedin",
+      label: SocialLinks.LINKEDIN,
     },
     {
       id: 2,
       url: "https://www.facebook.com/ilyaosw",
-      img: fb,
-      label: "Facebook",
+      label: SocialLinks.FACEBOOK,
     },
     {
       id: 3,
       url: "https://www.instagram.com/ilya_osw/",
-      img: ig,
-      label: "Instagram",
+      label: SocialLinks.INSTAGRAM,
     },
     {
       id: 4,
       url: "https://github.com/IlyaOsw",
-      img: git,
-      label: "Github",
+      label: SocialLinks.GITHUB,
     },
   ];
+
   const getLinks = () =>
     links.map((link) => (
       <a
@@ -41,7 +41,11 @@ const Follow = () => {
         className="me-3"
         key={link.id}
       >
-        <img src={link.img} alt={`${link.label} icon`} className="social" />
+        <img
+          src={process.env.PUBLIC_URL + `/${link.label}.svg`}
+          alt={`${link.label} icon`}
+          className="social"
+        />
       </a>
     ));
   return (

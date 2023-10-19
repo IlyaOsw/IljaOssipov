@@ -1,17 +1,23 @@
+import React from "react";
 import { useTranslation } from "react-i18next";
-import ee from "../Icons/ee.png";
-import en from "../Icons/en.png";
-import ru from "../Icons/ru.png";
 
-const Language = () => {
+const Language: React.FC = () => {
   const { t, i18n } = useTranslation();
-  const changeLanguage = (language) => {
+
+  enum Locales {
+    EE = "ee",
+    RU = "ru",
+    EN = "en",
+  }
+
+  const changeLanguage = (language: Locales) => {
     i18n.changeLanguage(language);
   };
-  const languageItems = [
-    { id: 1, label: "ee", image: ee },
-    { id: 2, label: "ru", image: ru },
-    { id: 3, label: "en", image: en },
+
+  const languageItems: { id: number; label: Locales }[] = [
+    { id: 1, label: Locales.EE },
+    { id: 2, label: Locales.RU },
+    { id: 3, label: Locales.EN },
   ];
   const getLanguages = () =>
     languageItems.map((lang) => (
@@ -20,7 +26,11 @@ const Language = () => {
           className="dropdown-item"
           onClick={() => changeLanguage(lang.label)}
         >
-          <img src={lang.image} alt={lang.label}></img>
+          <img
+            src={process.env.PUBLIC_URL + `/${lang.label}.png`}
+            alt={lang.label}
+          />
+
           {t(lang.label)}
         </button>
       </li>

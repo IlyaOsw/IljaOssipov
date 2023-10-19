@@ -1,9 +1,9 @@
+import React from "react";
 import { useTranslation } from "react-i18next";
 import "./About.scss";
-import myPhoto from "./Images/me.jpg";
 import Information from "./Information/Information";
 
-const About = () => {
+const About: React.FC = () => {
   const { t } = useTranslation();
   return (
     <div className="block-about">
@@ -13,7 +13,7 @@ const About = () => {
       <div className="about-information">
         <div className="about-photo">
           <img
-            src={myPhoto}
+            src={process.env.PUBLIC_URL + `/me.jpg`}
             alt="Ilja Ossipov"
             className="img-fluid animation_item"
           />

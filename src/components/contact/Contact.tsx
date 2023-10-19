@@ -1,8 +1,9 @@
+import React from "react";
 import { useTranslation } from "react-i18next";
 import "./Contact.scss";
 import { useForm, ValidationError } from "@formspree/react";
 
-const Contact = () => {
+const Contact: React.FC = () => {
   const { t } = useTranslation();
   const [state] = useForm("xrgwkbqk");
   if (state.succeeded) {

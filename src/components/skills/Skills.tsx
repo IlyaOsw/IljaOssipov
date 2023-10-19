@@ -1,8 +1,9 @@
+import React from "react";
 import { useTranslation } from "react-i18next";
 import "./Skills.scss";
 import SkillIcons from "./SkillsIcons/SkillIcons";
 
-const Skills = () => {
+const Skills: React.FC = () => {
   const { t } = useTranslation();
   return (
     <div className="block-skills">

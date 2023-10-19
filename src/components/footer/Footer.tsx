@@ -1,7 +1,8 @@
+import React from "react";
 import "./Footer.scss";
 import Follow from "./Follow/Follow";
 
-const Footer = () => {
+const Footer: React.FC = () => {
   return (
     <div className="container-fluid">
       <div className="d-sm-flex justify-content-around fs-4 block-footer">

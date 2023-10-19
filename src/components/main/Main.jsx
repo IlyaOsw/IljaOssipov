@@ -1,3 +1,4 @@
+import React from "react";
 import { useTranslation } from "react-i18next";
 import "./Main.scss";
 import firstPhoto from "./Images/mainPhoto1.jpg";

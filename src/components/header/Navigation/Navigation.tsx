@@ -1,12 +1,20 @@
+import React from "react";
 import { useTranslation } from "react-i18next";
 
-const Navigation = () => {
-  const { t, i18n } = useTranslation();
-  const headerItems = [
-    { id: 1, label: "about" },
-    { id: 2, label: "skills" },
-    { id: 3, label: "experience" },
-    { id: 4, label: "contact" },
+const Navigation: React.FC = () => {
+  const { t } = useTranslation();
+
+  enum Links {
+    ABOUT = "about",
+    SKILLS = "skills",
+    EXPERIENCE = "experience",
+    CONTACT = "contact",
+  }
+  const headerItems: { id: number; label: Links }[] = [
+    { id: 1, label: Links.ABOUT },
+    { id: 2, label: Links.SKILLS },
+    { id: 3, label: Links.EXPERIENCE },
+    { id: 4, label: Links.CONTACT },
   ];
   const getHeaders = () =>
     headerItems.map((item) => (

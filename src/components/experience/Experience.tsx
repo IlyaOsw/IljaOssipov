@@ -1,9 +1,9 @@
+import React from "react";
 import { useTranslation } from "react-i18next";
 import "./Experience.scss";
-import expImg from "./Images/exp.jpg";
 import Description from "./Description/Description";
 
-const Experience = () => {
+const Experience: React.FC = () => {
   const { t } = useTranslation();
   return (
     <>
@@ -16,7 +16,11 @@ const Experience = () => {
             <Description />
           </div>
           <div className="exp-image mb-5 mt-5">
-            <img src={expImg} alt="" className="img-fluid animation_item"></img>
+            <img
+              src={process.env.PUBLIC_URL + `/exp.jpg`}
+              alt=""
+              className="img-fluid animation_item"
+            ></img>
           </div>
         </div>
       </div>

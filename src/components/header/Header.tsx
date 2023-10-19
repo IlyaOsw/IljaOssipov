@@ -1,12 +1,12 @@
+import React from "react";
 import { useTranslation } from "react-i18next";
 import "./Header.scss";
-import language from "./Icons/language.png";
 import Navigation from "./Navigation/Navigation";
 import Language from "./Language/Language";
 import Theme from "./Themes/Theme";
 
 const Header = () => {
-  const { t, i18n } = useTranslation();
+  const { t } = useTranslation();
   return (
     <div className="container-fluid fixed-top header_color">
       <nav className="navbar navbar-expand-lg container">
@@ -42,7 +42,10 @@ const Header = () => {
             aria-expanded="false"
           >
             <a href="/" className="languageBtn">
-              <img src={language} alt="lang"></img>
+              <img
+                src={process.env.PUBLIC_URL + `/language.png`}
+                alt="lang"
+              ></img>
               {t("language")}
             </a>
           </button>
