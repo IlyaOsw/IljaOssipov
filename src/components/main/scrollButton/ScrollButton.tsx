@@ -1,29 +1,27 @@
 import React from "react";
-import { useEffect } from "react";
 import "./ScrollButton.scss";
+import { useState } from "react";
 
-const ScrollButton = () => {
-  useEffect(() => {
-    const scrollButton = document.querySelector(".scroll-btn") as HTMLElement;
-    scrollButton.addEventListener("click", () => {
-      window.scroll(0, 0);
-    });
-
-    window.addEventListener("scroll", () => {
-      if (window.scrollY > 100) {
-        scrollButton.classList.remove("hidden");
-      } else {
-        scrollButton.classList.add("hidden");
-      }
-    });
-  }, []);
-
+const ScrollButton: React.FC = () => {
+  const [isHidden, setIsHidden] = useState(true);
+  const scrollToTop = () => {
+    window.scrollTo(0, 0);
+  };
+  const toggle = () => {
+    if (window.scrollY > 100) {
+      setIsHidden(false);
+    } else {
+      setIsHidden(true);
+    }
+  };
+  window.addEventListener("scroll", toggle);
   return (
     <div>
       <img
         src={process.env.PUBLIC_URL + `/arrowUp.png`}
         alt="Arrow up"
-        className="scroll-btn hidden"
+        className={`scroll-btn ${isHidden ? "hidden" : ""}`}
+        onClick={scrollToTop}
       ></img>
     </div>
   );
