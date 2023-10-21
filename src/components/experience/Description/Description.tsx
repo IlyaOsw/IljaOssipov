@@ -22,7 +22,6 @@ const Description: React.FC = () => {
     { id: 5, label: Title.JS },
     { id: 6, label: Title.TS },
     { id: 7, label: Title.REACT },
-    { id: 8, label: Title.REDUX },
   ];
   const getDescription = () =>
     desription.map((text) => (

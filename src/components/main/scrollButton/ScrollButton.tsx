@@ -1,10 +1,10 @@
+import React from "react";
 import { useEffect } from "react";
-import arrowUp from "../Images/arrowUp.png";
 import "./ScrollButton.scss";
 
 const ScrollButton = () => {
   useEffect(() => {
-    const scrollButton = document.querySelector(".scroll-btn");
+    const scrollButton = document.querySelector(".scroll-btn") as HTMLElement;
     scrollButton.addEventListener("click", () => {
       window.scroll(0, 0);
     });
@@ -20,7 +20,11 @@ const ScrollButton = () => {
 
   return (
     <div>
-      <img src={arrowUp} alt="Arrow up" className="scroll-btn hidden"></img>
+      <img
+        src={process.env.PUBLIC_URL + `/arrowUp.png`}
+        alt="Arrow up"
+        className="scroll-btn hidden"
+      ></img>
     </div>
   );
 };

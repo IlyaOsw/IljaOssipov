@@ -3,6 +3,7 @@ import { useTranslation } from "react-i18next";
 
 const Theme: React.FC = () => {
   const { t } = useTranslation();
+
   enum Theme {
     DARK = "dark",
     LIGHT = "light",
