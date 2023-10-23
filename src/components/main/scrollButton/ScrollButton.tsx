@@ -8,7 +8,7 @@ const ScrollButton: React.FC = () => {
     window.scrollTo(0, 0);
   };
   const toggle = () => {
-    if (window.scrollY > 100) {
+    if (window.scrollY > 300) {
       setIsHidden(false);
     } else {
       setIsHidden(true);

@@ -3,55 +3,51 @@ import { useTranslation } from "react-i18next";
 
 const Navigation: React.FC = () => {
   const { t } = useTranslation();
-  // Scroll To Blocks
-  const aboutBlock = document.querySelector(".block-about");
-  const skilssBlock = document.querySelector(".block-skills");
-  const experienceBlock = document.querySelector(".block-experience");
-  const contactBlock = document.querySelector(".block-contact");
-
-  function scrollToBlock(element: any) {
-    const scrollTopOffset = element.offsetTop;
-    window.scroll({
-      left: 0,
-      top: scrollTopOffset,
-      behavior: "smooth",
-    });
+  function scrollToBlock(block: string): void {
+    const element = document.querySelector(block) as HTMLElement;
+    if (element) {
+      const scrollTopOffset = element.offsetTop;
+      window.scroll({
+        left: 0,
+        top: scrollTopOffset,
+        behavior: "smooth",
+      });
+    }
   }
+  // // Hide Burger-Menu
+  // // const body = document.body;
+  // const burgerBtn = document.getElementById("menu") as HTMLElement;
+  // // const burgerMenu = document.getElementById(
+  // //   "navbarSupportedContent"
+  // // ) as HTMLElement;
+  // // const languageBtn = document.querySelector(".btn-group") as HTMLElement;
+  // const navItems = document.querySelectorAll(".nav-item");
+  // const dropdownItems = document.querySelectorAll(".dropdown-item");
 
-  const aboutBtn = document.getElementById("aboutBtn");
+  // // body.addEventListener("click", (event: any) => {
+  // //   if (
+  // //     !burgerMenu.contains(event.target) &&
+  // //     !languageBtn.contains(event.target)
+  // //   ) {
+  // //     if (burgerMenu.classList.contains("show")) {
+  // //       burgerBtn.click();
+  // //     }
+  // //   }
+  // // });
 
-  if (aboutBtn) {
-    aboutBtn.addEventListener("click", (event) => {
-      event.preventDefault();
-      scrollToBlock(aboutBlock);
-    });
-  }
-  const skillsBtn = document.getElementById("skillsBtn");
+  // function closeMenu() {
+  //   if (burgerBtn.getAttribute("aria-expanded") === "true") {
+  //     burgerBtn.click();
+  //   }
+  // }
 
-  if (skillsBtn) {
-    skillsBtn.addEventListener("click", (event) => {
-      event.preventDefault();
-      scrollToBlock(skilssBlock);
-    });
-  }
+  // navItems.forEach((navItems) => {
+  //   navItems.addEventListener("click", closeMenu);
+  // });
 
-  const experienceBtn = document.getElementById("experienceBtn");
-
-  if (experienceBtn) {
-    experienceBtn.addEventListener("click", (event) => {
-      event.preventDefault();
-      scrollToBlock(experienceBlock);
-    });
-  }
-  const contactBtn = document.getElementById("contactBtn");
-
-  if (contactBtn) {
-    contactBtn.addEventListener("click", (event) => {
-      event.preventDefault();
-      scrollToBlock(contactBlock);
-    });
-  }
-
+  // dropdownItems.forEach((dropdownItem) => {
+  //   dropdownItem.addEventListener("click", closeMenu);
+  // });
   enum Links {
     ABOUT = "about",
     SKILLS = "skills",
@@ -72,6 +68,9 @@ const Navigation: React.FC = () => {
           className="nav-link active me-1"
           aria-current="page"
           rel="noopener noreferrer"
+          onClick={() => {
+            scrollToBlock(`.block-${item.label}`);
+          }}
         >
           {t(item.label)}
         </a>
