@@ -1,7 +1,11 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
 
-const Language: React.FC = () => {
+interface closeMenuProps {
+  closeMenu: () => void;
+}
+
+const Language: React.FC<closeMenuProps> = ({ closeMenu }) => {
   const { t, i18n } = useTranslation();
 
   enum Locales {
@@ -24,7 +28,10 @@ const Language: React.FC = () => {
       <li key={lang.id}>
         <button
           className="dropdown-item"
-          onClick={() => changeLanguage(lang.label)}
+          onClick={() => {
+            changeLanguage(lang.label);
+            closeMenu();
+          }}
         >
           <img
             src={process.env.PUBLIC_URL + `/${lang.label}.png`}

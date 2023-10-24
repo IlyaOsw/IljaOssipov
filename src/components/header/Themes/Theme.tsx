@@ -1,7 +1,11 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
 
-const Theme: React.FC = () => {
+interface closeMenuProps {
+  closeMenu: () => void;
+}
+
+const Theme: React.FC<closeMenuProps> = ({ closeMenu }) => {
   const { t } = useTranslation();
 
   enum Theme {
@@ -21,6 +25,7 @@ const Theme: React.FC = () => {
         } ${item.label}_theme fw-semibold ${
           item.label === Theme.LIGHT ? "ms-3" : ""
         }`}
+        onClick={closeMenu}
       >
         <img
           src={process.env.PUBLIC_URL + `/${item.label}.svg`}

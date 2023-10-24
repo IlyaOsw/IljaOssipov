@@ -1,6 +1,5 @@
-import React from "react";
+import React, { useState } from "react";
 import "./ScrollButton.scss";
-import { useState } from "react";
 
 const ScrollButton: React.FC = () => {
   const [isHidden, setIsHidden] = useState(true);

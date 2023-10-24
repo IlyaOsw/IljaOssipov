@@ -25,42 +25,8 @@ function App() {
     },
   });
   useEffect(() => {
-    // Hide Burger-Menu
-    const body = document.body;
-    const burgerBtn = document.getElementById("menu") as HTMLElement;
-    const burgerMenu = document.getElementById(
-      "navbarSupportedContent"
-    ) as HTMLElement;
-    const languageBtn = document.querySelector(".btn-group") as HTMLElement;
-    const navItems = document.querySelectorAll(".nav-item");
-    const dropdownItems = document.querySelectorAll(".dropdown-item");
-
-    body.addEventListener("click", (event: any) => {
-      if (
-        !burgerMenu.contains(event.target) &&
-        !languageBtn.contains(event.target)
-      ) {
-        if (burgerMenu.classList.contains("show")) {
-          burgerBtn.click();
-        }
-      }
-    });
-
-    function closeMenu() {
-      if (burgerBtn.getAttribute("aria-expanded") === "true") {
-        burgerBtn.click();
-      }
-    }
-
-    navItems.forEach((navItems) => {
-      navItems.addEventListener("click", closeMenu);
-    });
-
-    dropdownItems.forEach((dropdownItem) => {
-      dropdownItem.addEventListener("click", closeMenu);
-    });
-
     // Dark/Light Theme
+    const body = document.body;
     const headerColor = document.querySelector(".header_color") as HTMLElement;
     const darkTheme = document.querySelector(".dark_theme") as HTMLElement;
     const lightTheme = document.querySelector(".light_theme") as HTMLElement;
