@@ -5,21 +5,21 @@ import Navigation from "./Navigation/Navigation";
 import Language from "./Language/Language";
 import Theme from "./Themes/Theme";
 
-const Header = () => {
+const Header: React.FC = () => {
   const { t } = useTranslation();
-  const [isMenuOpen, setMenuOpen] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
   const headerRef = useRef<HTMLDivElement>(null);
 
   const toggleBurgerMenu = () => {
-    setMenuOpen(!isMenuOpen);
+    setIsMenuOpen(!isMenuOpen);
   };
   const closeMenu = () => {
-    setMenuOpen(false);
+    setIsMenuOpen(false);
   };
 
   function outsideClick(e: any) {
     if (headerRef.current && !headerRef.current.contains(e.target)) {
-      setMenuOpen(false);
+      setIsMenuOpen(false);
     }
   }
   if (isMenuOpen) {

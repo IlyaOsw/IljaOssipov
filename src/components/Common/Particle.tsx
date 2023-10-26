@@ -75,7 +75,7 @@ function Particle() {
             value: 0.6,
           },
           shape: {
-            type: "circle",
+            type: "triangle ",
           },
           size: {
             value: { min: 1, max: 1 },
