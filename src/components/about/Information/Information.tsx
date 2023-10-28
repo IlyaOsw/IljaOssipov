@@ -33,7 +33,7 @@ const Information: React.FC = () => {
       <tr className="animation_item" key={item.id}>
         <td>
           <img
-            src={process.env.PUBLIC_URL + `/${item.label}.png`}
+            src={process.env.PUBLIC_URL + `/images/${item.label}.png`}
             alt={item.label}
           />
           {t(item.label)}
@@ -82,7 +82,7 @@ const Information: React.FC = () => {
         key={link.id}
       >
         <img
-          src={process.env.PUBLIC_URL + `/${link.label}.svg`}
+          src={process.env.PUBLIC_URL + `/images/${link.label}.svg`}
           alt={link.label}
           className="social"
         />
@@ -94,7 +94,10 @@ const Information: React.FC = () => {
         {getInformation()}
         <tr className="animation_item">
           <td>
-            <img src={process.env.PUBLIC_URL + `/media.png`} alt="Media" />
+            <img
+              src={process.env.PUBLIC_URL + `/images/media.png`}
+              alt="Media"
+            />
             {t("media")}
           </td>
           <td>{getLinks()}</td>
@@ -103,7 +106,9 @@ const Information: React.FC = () => {
           <td></td>
           <td>
             <a
-              href={process.env.PUBLIC_URL + `/Front-End Ilja Ossipov CV.pdf`}
+              href={
+                process.env.PUBLIC_URL + `/images/Front-End Ilja Ossipov CV.pdf`
+              }
               download="Front-End Ilja Ossipov CV.pdf"
               className="about-cv"
             >

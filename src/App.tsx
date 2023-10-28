@@ -8,7 +8,7 @@ import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer/Footer";
 import i18n from "./i18n";
 
-function App() {
+const App: React.FC = () => {
   i18n.init({
     resources: {
       en: {
@@ -23,7 +23,7 @@ function App() {
     },
   });
   return (
-    <div className="App">
+    <div>
       <Header />
       <Main />
       <div className="container">
@@ -35,5 +35,5 @@ function App() {
       <Footer />
     </div>
   );
-}
+};
 export default App;

@@ -27,7 +27,7 @@ const SkillIcons: React.FC = () => {
   const getSkillIcons = () =>
     skillIcons.map((icon) => (
       <img
-        src={process.env.PUBLIC_URL + `/${icon.label}.svg`}
+        src={process.env.PUBLIC_URL + `/images/${icon.label}.svg`}
         alt={`${icon.label} icon`}
         className="animation_item"
         key={icon.id}

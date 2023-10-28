@@ -34,10 +34,9 @@ const Language: React.FC<closeMenuProps> = ({ closeMenu }) => {
           }}
         >
           <img
-            src={process.env.PUBLIC_URL + `/${lang.label}.png`}
+            src={process.env.PUBLIC_URL + `/images/${lang.label}.png`}
             alt={lang.label}
           />
-
           {t(lang.label)}
         </button>
       </li>

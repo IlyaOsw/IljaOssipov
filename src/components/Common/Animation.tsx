@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 
-const Animation = () => {
+const Animation: React.FC = () => {
   useEffect(() => {
     const animationOnScroll = () => {
       for (let i = 0; i < items.length; i++) {
@@ -33,10 +33,6 @@ const Animation = () => {
     const items = document.querySelectorAll(".animation_item");
     if (items.length > 0) {
       window.addEventListener("scroll", animationOnScroll);
-
-      //   window.addEventListener("load", () => {
-      //     animationOnScroll();
-      //   });
     }
   }, []);
   return <></>;

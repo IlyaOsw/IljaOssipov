@@ -69,7 +69,7 @@ const Header: React.FC = () => {
           >
             <a href="/" className="languageBtn">
               <img
-                src={process.env.PUBLIC_URL + `/language.png`}
+                src={process.env.PUBLIC_URL + `/images/language.png`}
                 alt="lang"
               ></img>
               {t("language")}

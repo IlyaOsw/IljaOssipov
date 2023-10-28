@@ -13,7 +13,7 @@ const About: React.FC = () => {
       <div className="about-information">
         <div className="about-photo">
           <img
-            src={process.env.PUBLIC_URL + `/me.jpg`}
+            src={process.env.PUBLIC_URL + `/images/me.jpg`}
             alt="Ilja Ossipov"
             className="img-fluid animation_item"
           />

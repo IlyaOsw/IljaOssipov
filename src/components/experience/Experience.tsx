@@ -17,7 +17,7 @@ const Experience: React.FC = () => {
           </div>
           <div className="exp-image mb-5 mt-5">
             <img
-              src={process.env.PUBLIC_URL + `/exp.jpg`}
+              src={process.env.PUBLIC_URL + `/images/exp.jpg`}
               alt=""
               className="img-fluid animation_item"
             ></img>

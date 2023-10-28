@@ -17,7 +17,6 @@ const Navigation: React.FC<closeMenuProps> = ({ closeMenu }) => {
       });
     }
   }
-
   enum Links {
     ABOUT = "about",
     SKILLS = "skills",

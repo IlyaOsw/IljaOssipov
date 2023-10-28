@@ -38,7 +38,7 @@ const Main: React.FC = () => {
         <div className="carousel-inner">
           <div className="carousel-item active">
             <img
-              src={process.env.PUBLIC_URL + `/mainPhoto1.jpg`}
+              src={process.env.PUBLIC_URL + `/images/mainPhoto1.jpg`}
               alt=""
               className="d-block w-100"
             />
@@ -49,7 +49,7 @@ const Main: React.FC = () => {
           </div>
           <div className="carousel-item">
             <img
-              src={process.env.PUBLIC_URL + `/mainPhoto2.jpg`}
+              src={process.env.PUBLIC_URL + `/images/mainPhoto2.jpg`}
               alt=""
               className="d-block w-100"
             />
@@ -60,7 +60,7 @@ const Main: React.FC = () => {
           </div>
           <div className="carousel-item">
             <img
-              src={process.env.PUBLIC_URL + `/mainPhoto3.jpg`}
+              src={process.env.PUBLIC_URL + `/images/mainPhoto3.jpg`}
               alt=""
               className="d-block w-100"
             />

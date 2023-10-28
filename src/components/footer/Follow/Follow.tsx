@@ -42,7 +42,7 @@ const Follow: React.FC = () => {
         key={link.id}
       >
         <img
-          src={process.env.PUBLIC_URL + `/${link.label}.svg`}
+          src={process.env.PUBLIC_URL + `/images/${link.label}.svg`}
           alt={`${link.label} icon`}
           className="social"
         />

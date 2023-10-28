@@ -9,7 +9,7 @@
   min-width: 320px;
   letter-spacing: 1px;
   ::placeholder {
-    color: rgb(88, 88, 88);
+    color: rgb(143, 143, 143);
   }
   .contact-tittle {
     font-size: 3rem;
@@ -76,8 +76,8 @@
     }
   }
   .line {
-    border: 0 none #f8f9fa;
-    border-bottom: 1px solid #f8f9fa;
+    border: 0 none;
+    border-bottom: 1px solid rgb(143, 143, 143);
     outline: none;
   }
   .contact-send button {

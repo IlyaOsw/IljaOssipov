@@ -17,7 +17,7 @@ const ScrollButton: React.FC = () => {
   return (
     <div>
       <img
-        src={process.env.PUBLIC_URL + `/arrowUp.png`}
+        src={process.env.PUBLIC_URL + `/images/arrowUp.png`}
         alt="Arrow up"
         className={`scroll-btn ${isHidden ? "hidden" : ""}`}
         onClick={scrollToTop}
