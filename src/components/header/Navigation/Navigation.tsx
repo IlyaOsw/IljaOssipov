@@ -7,7 +7,7 @@ interface closeMenuProps {
 
 const Navigation: React.FC<closeMenuProps> = ({ closeMenu }) => {
   const { t } = useTranslation();
-  function scrollToBlock(block: string): void {
+  function scrollToBlock(block: string) {
     const element = document.querySelector(block) as HTMLElement;
     if (element) {
       const scrollTop = element.offsetTop;

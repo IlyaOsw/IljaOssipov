@@ -20,13 +20,15 @@ const Theme: React.FC<closeMenuProps> = ({ closeMenu }) => {
       document.body.style.backgroundImage =
         headerColor.style.backgroundImage = `linear-gradient(to right, ${background})`;
 
-      navLinks.forEach((link: any) => {
-        link.style.color = textColor;
-        link.style.setProperty("color", textColor, "important");
+      navLinks.forEach((link: Element) => {
+        const linkElement = link as HTMLElement;
+        linkElement.style.color = textColor;
+        linkElement.style.setProperty("color", textColor, "important");
       });
 
-      blocks.forEach((block: any) => {
-        block.style.color = textColor;
+      blocks.forEach((block: Element) => {
+        const blockElement = block as HTMLElement;
+        blockElement.style.color = textColor;
       });
     }
 

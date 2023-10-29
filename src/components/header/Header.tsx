@@ -17,8 +17,8 @@ const Header: React.FC = () => {
     setIsMenuOpen(false);
   };
 
-  function outsideClick(e: any) {
-    if (headerRef.current && !headerRef.current.contains(e.target)) {
+  function outsideClick(e: Event) {
+    if (headerRef.current && !headerRef.current.contains(e.target as Node)) {
       setIsMenuOpen(false);
     }
   }
