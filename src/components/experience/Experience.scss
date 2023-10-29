@@ -42,7 +42,7 @@
       width: 700px;
     }
     img {
-      width: 475px;
+      width: 450px;
       border-radius: 50%;
       user-select: none;
       opacity: 0;
@@ -54,6 +54,11 @@
     img.active {
       opacity: 0.9;
       transform: scale(1);
+    }
+  }
+  @media (max-width: 767px) {
+    .experience-body img {
+      width: 350px;
     }
   }
 }
