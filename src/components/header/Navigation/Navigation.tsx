@@ -7,7 +7,7 @@ interface closeMenuProps {
 
 const Navigation: React.FC<closeMenuProps> = ({ closeMenu }) => {
   const { t } = useTranslation();
-  function scrollToBlock(block: string) {
+  function scrollToBlock(block: string): void {
     const element = document.querySelector(block) as HTMLElement;
     if (element) {
       const scrollTop = element.offsetTop;
@@ -30,14 +30,14 @@ const Navigation: React.FC<closeMenuProps> = ({ closeMenu }) => {
     { id: 4, label: Links.CONTACT },
   ];
 
-  const getHeaders = () =>
+  const getHeaders = (): JSX.Element[] =>
     headerItems.map((item) => (
       <li className="nav-item" key={item.id}>
         <a
           className="nav-link active me-1"
           aria-current="page"
           rel="noopener noreferrer"
-          onClick={() => {
+          onClick={(): void => {
             scrollToBlock(`.block-${item.label}`);
             closeMenu();
           }}

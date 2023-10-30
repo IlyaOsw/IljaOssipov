@@ -49,9 +49,9 @@ $skills-text: center;
       transform: scale(1.2);
     }
   }
-  @media (max-width: 479px) {
+  @media (max-width: 576px) {
     .skills-icons img {
-      margin: 17px;
+      margin: 10px;
     }
   }
 }

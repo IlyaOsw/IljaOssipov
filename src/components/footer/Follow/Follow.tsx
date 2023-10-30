@@ -9,7 +9,7 @@ const Follow: React.FC = () => {
     INSTAGRAM = "Instagram",
     GITHUB = "Github",
   }
-  const links = [
+  const links: { id: number; url: string; label: SocialLinks }[] = [
     {
       id: 1,
       url: "https://www.linkedin.com/in/ilyaosw/",
@@ -32,7 +32,7 @@ const Follow: React.FC = () => {
     },
   ];
 
-  const getLinks = () =>
+  const getLinks = (): JSX.Element[] =>
     links.map((link) => (
       <a
         href={link.url}

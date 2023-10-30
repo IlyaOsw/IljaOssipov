@@ -10,14 +10,14 @@ const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const headerRef = useRef<HTMLDivElement>(null);
 
-  const toggleBurgerMenu = () => {
+  const toggleBurgerMenu = (): void => {
     setIsMenuOpen(!isMenuOpen);
   };
-  const closeMenu = () => {
+  const closeMenu = (): void => {
     setIsMenuOpen(false);
   };
 
-  function outsideClick(e: Event) {
+  function outsideClick(e: MouseEvent): void {
     if (headerRef.current && !headerRef.current.contains(e.target as Node)) {
       setIsMenuOpen(false);
     }

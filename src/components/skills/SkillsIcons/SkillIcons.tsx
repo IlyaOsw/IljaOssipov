@@ -24,7 +24,7 @@ const SkillIcons: React.FC = () => {
     { id: 8, label: Skills.REDUX },
     { id: 9, label: Skills.GIT },
   ];
-  const getSkillIcons = () =>
+  const getSkillIcons = (): JSX.Element[] =>
     skillIcons.map((icon) => (
       <img
         src={process.env.PUBLIC_URL + `/images/${icon.label}.svg`}

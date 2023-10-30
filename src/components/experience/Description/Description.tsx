@@ -24,7 +24,7 @@ const Description: React.FC = () => {
     { id: 7, label: Title.REACT },
     { id: 8, label: Title.GIT },
   ];
-  const getDescription = () =>
+  const getDescription = (): JSX.Element[] =>
     desription.map((text) => (
       <li className="animation_item" key={text.id}>
         <p>{t(text.label)}</p>

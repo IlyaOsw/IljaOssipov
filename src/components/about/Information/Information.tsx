@@ -28,7 +28,7 @@ const Information: React.FC = () => {
     { id: 5, label: title.PHONE, info: Info.PHONENUMBER },
     { id: 6, label: title.MAIL, info: Info.MYMAIL },
   ];
-  const getInformation = () => {
+  const getInformation = (): JSX.Element[] => {
     return information.map((item) => (
       <tr className="animation_item" key={item.id}>
         <td>
@@ -49,7 +49,7 @@ const Information: React.FC = () => {
     GITHUB = "Github",
   }
 
-  const links = [
+  const links: { id: number; url: string; label: SocialLinks }[] = [
     {
       id: 1,
       url: "https://www.linkedin.com/in/ilyaosw/",
@@ -72,7 +72,7 @@ const Information: React.FC = () => {
     },
   ];
 
-  const getLinks = () =>
+  const getLinks = (): JSX.Element[] =>
     links.map((link) => (
       <a
         href={link.url}

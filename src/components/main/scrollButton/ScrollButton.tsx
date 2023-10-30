@@ -3,10 +3,10 @@ import "./ScrollButton.scss";
 
 const ScrollButton: React.FC = () => {
   const [isHidden, setIsHidden] = useState(true);
-  const scrollToTop = () => {
+  const scrollToTop = (): void => {
     window.scrollTo(0, 0);
   };
-  const toggle = () => {
+  const toggle = (): void => {
     if (window.scrollY > 300) {
       setIsHidden(false);
     } else {

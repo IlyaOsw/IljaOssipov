@@ -16,27 +16,27 @@ const Theme: React.FC<closeMenuProps> = ({ closeMenu }) => {
       ".block-about, .block-skills, .block-experience, .block-contact, .block-footer"
     );
 
-    function toggleTheme(background: string, textColor: string) {
-      document.body.style.backgroundImage =
-        headerColor.style.backgroundImage = `linear-gradient(to right, ${background})`;
+    function toggleTheme(background: string, textColor: string): void {
+      document.body.style.background =
+        headerColor.style.background = `linear-gradient(to right, ${background})`;
 
-      navLinks.forEach((link: Element) => {
+      navLinks.forEach((link: Element): void => {
         const linkElement = link as HTMLElement;
         linkElement.style.color = textColor;
         linkElement.style.setProperty("color", textColor, "important");
       });
 
-      blocks.forEach((block: Element) => {
+      blocks.forEach((block: Element): void => {
         const blockElement = block as HTMLElement;
         blockElement.style.color = textColor;
       });
     }
 
-    lightTheme.addEventListener("click", () => {
+    lightTheme.addEventListener("click", (): void => {
       toggleTheme("#d4d4d4, #f3f3f3", "#141414");
     });
 
-    darkTheme.addEventListener("click", () => {
+    darkTheme.addEventListener("click", (): void => {
       toggleTheme("#141414, #494949", "#f8f9fa");
     });
   }, []);
@@ -49,7 +49,7 @@ const Theme: React.FC<closeMenuProps> = ({ closeMenu }) => {
     { id: 2, label: Theme.LIGHT },
   ];
 
-  const getThemes = () =>
+  const getThemes = (): JSX.Element[] =>
     themeItems.map((item) => (
       <div
         key={item.id}

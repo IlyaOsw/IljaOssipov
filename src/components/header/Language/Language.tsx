@@ -14,7 +14,7 @@ const Language: React.FC<closeMenuProps> = ({ closeMenu }) => {
     EN = "en",
   }
 
-  const changeLanguage = (language: Locales) => {
+  const changeLanguage = (language: Locales): void => {
     i18n.changeLanguage(language);
   };
 
@@ -23,12 +23,12 @@ const Language: React.FC<closeMenuProps> = ({ closeMenu }) => {
     { id: 2, label: Locales.RU },
     { id: 3, label: Locales.EN },
   ];
-  const getLanguages = () =>
+  const getLanguages = (): JSX.Element[] =>
     languageItems.map((lang) => (
       <li key={lang.id}>
         <button
           className="dropdown-item"
-          onClick={() => {
+          onClick={(): void => {
             changeLanguage(lang.label);
             closeMenu();
           }}
