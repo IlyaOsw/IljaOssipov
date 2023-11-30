@@ -26,24 +26,23 @@
     right: initial;
     left: 0;
   }
-
   .item-left {
     transform: translate(-130%, 0px);
     opacity: 0;
     transition: all 1s ease 0s;
-  }
-  .item-left.active {
-    transform: translate(0px, 0px);
-    opacity: 1;
+    &.active {
+      transform: translate(0px, 0px);
+      opacity: 1;
+    }
   }
   .item-right {
     transform: translate(130%, 0px);
     opacity: 0;
     transition: all 1s ease 0s;
-  }
-  .item-right.active {
-    transform: translate(0px, 0px);
-    opacity: 1;
+    &.active {
+      transform: translate(0px, 0px);
+      opacity: 1;
+    }
   }
   .social {
     border-radius: 25%;
