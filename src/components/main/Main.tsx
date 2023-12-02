@@ -1,7 +1,7 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
 import "./Main.scss";
-import ScrollButton from "./ScrollButton/ScrollButton";
+import ScrollButton from "../Common/ScrollButton/ScrollButton";
 
 const Main: React.FC = () => {
   const { t } = useTranslation();
